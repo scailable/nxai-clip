@@ -1,8 +1,9 @@
 import json
 
-import clip # pip install git+https://github.com/openai/CLIP.git --user
+import clip  # pip install git+https://github.com/openai/CLIP.git --user
 import onnx
 import torch
+# noinspection PyPackageRequirements
 from PIL import Image
 from onnxsim import simplify
 from torch import nn
@@ -13,24 +14,29 @@ model_means = [0.48145466, 0.4578275, 0.40821073]
 model_means = [round(255 * m, 2) for m in model_means]  # Convert to 0-255 range
 model_stds = [0.26862954, 0.26130258, 0.27577711]
 model_stds = [round(255 * s, 2) for s in model_stds]  # Convert to 0-255 range
-model_name = "RN50" # TODO: Replace with the desired clip model version
-text_classes = ["person", "car", "dog", "cat", "orange", "apple", "apple with leaves", "rotten apple", "rotten orange", "sliced orange", "sliced apple"] # TODO: Replace with the desired class names
+model_name = "RN50"  # TODO: Replace with the desired clip model version
+text_classes = ["the red car is on the top the blue car is on the bottom",
+                "the red car is on the left the blue car is on the right",
+                "the blue car is on the left the red car is on the right", "person", "dog", "cat", "orange", "apple",
+                "apple with leaves", "rotten apple", "rotten orange", "sliced orange",
+                "sliced apple"]  # TODO: Replace with the desired class names
 class_names = ";".join([f'{i}:a photo of a {c}' for i, c in enumerate(text_classes)])
 scores_output_name = f'scores-{class_names}'
 opset_version = 14
 onnx_path = "clip_visual.onnx"
 
+
 class ClipTextualModel(nn.Module):
     """Copied from https://github.com/Lednik7/CLIP-ONNX"""
 
-    def __init__(self, model):
+    def __init__(self, model_in):
         super().__init__()
-        self.transformer = model.transformer
-        self.positional_embedding = model.positional_embedding
-        self.transformer = model.transformer
-        self.ln_final = model.ln_final
-        self.text_projection = model.text_projection
-        self.token_embedding = model.token_embedding
+        self.transformer = model_in.transformer
+        self.positional_embedding = model_in.positional_embedding
+        self.transformer = model_in.transformer
+        self.ln_final = model_in.ln_final
+        self.text_projection = model_in.text_projection
+        self.token_embedding = model_in.token_embedding
 
     def forward(self, text):
         x = self.token_embedding(text)  # [batch_size, n_ctx, d_model]
@@ -52,15 +58,15 @@ class ClipTextualModel(nn.Module):
 class ClipVisionModel(nn.Module):
     """Adapted from https://github.com/Lednik7/CLIP-ONNX"""
 
-    def __init__(self, model, text_classes):
+    def __init__(self, model_in, text_classes_in):
         super(ClipVisionModel, self).__init__()
 
-        self.logit_scale = model.logit_scale.exp().detach()
-        text_model = ClipTextualModel(model)
-        self.model = model.visual
+        self.logit_scale = model_in.logit_scale.exp().detach()
+        text_model = ClipTextualModel(model_in)
+        self.model = model_in.visual
         self.model.eval()
 
-        self.text_features = text_model(clip.tokenize(text_classes).cpu())
+        self.text_features = text_model(clip.tokenize(text_classes_in).cpu())
         self.text_features = self.text_features / self.text_features.norm(dim=-1, keepdim=True)
         self.text_features = self.text_features.detach()
 
@@ -125,7 +131,6 @@ print('Labels:', text_classes)
 print('ONNX Runtime outputs:', ort_outs)
 # Most probable class
 print('Most probable class:', text_classes[ort_outs[0].argmax()])
-
 
 ############ test clip on a directory of images ############
 from os.path import *
