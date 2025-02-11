@@ -12,10 +12,13 @@ import instant_clip_tokenizer
 
 # noinspection DuplicatedCode
 TEXT_CLASSES = [
-    "car", "person", "dog", "cat", "orange", "apple",
-    "apple with leaves", "rotten apple", "rotten orange",
-    "sliced orange", "sliced apple"
+    "orange",
+    "apple",
+    "rotten apple",
+    "rotten orange",
+    "sliced apple"
 ]
+
 
 
 def preprocess_image(path):
