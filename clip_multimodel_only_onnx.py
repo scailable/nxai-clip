@@ -28,7 +28,7 @@ def preprocess_image(path):
 
 
 def infer_image(ort_session, image_path, text_tokens_np):
-    return ort_session.run(None, {"image": preprocess_image(image_path), "text": text_tokens_np})[0][0]
+    return ort_session.run(None, {"frame": preprocess_image(image_path), "text": text_tokens_np})[0][0]
 
 
 def print_results(outputs):

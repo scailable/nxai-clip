@@ -70,11 +70,12 @@ def run_pytorch_inference():
     dummy_image = torch.randn(1, 3, 224, 224, device=device)
     dummy_text = torch.tensor(tokenizer.tokenize_batch(TEXT_CLASSES, context_length=77), dtype=torch.int32).to(device)
 
+    # Change the input name from "image" to "frame" here:
     torch.onnx.export(
         model,
         (dummy_image, dummy_text),
         onnx_path,
-        input_names=["image", "text"],
+        input_names=["frame", "text"],  # <-- Updated input name
         output_names=["probabilities"],
         dynamic_axes={
             "text": {0: "num_prompts"},  # The first dimension (number of text strings) is dynamic
@@ -93,7 +94,8 @@ def run_pytorch_inference():
 def infer_single_image(ort_session, path, text_tokens_np):
     image_data = preprocess_numpy(path)
     start = time.perf_counter()
-    outs = ort_session.run(None, {"image": image_data, "text": text_tokens_np})[0][0]
+    # Update the input dictionary key to "frame" instead of "image":
+    outs = ort_session.run(None, {"frame": image_data, "text": text_tokens_np})[0][0]
     run_time = time.perf_counter() - start
     for label, p in zip(TEXT_CLASSES, outs.tolist()):
         print(f"{label:50s}: {p:.3f}")
