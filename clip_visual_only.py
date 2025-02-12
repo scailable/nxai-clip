@@ -10,7 +10,7 @@ CLASSES = [
     "orange", "sliced-apple", "rotten-orange", "rotten-apple", "apple"
 ]
 
-MODEL_PATH = "clip_visual.onnx"
+MODEL_PATH = "boys.onnx"
 
 def preprocess(path):
     img = Image.open(path).convert("RGB").resize((W, H), Image.BICUBIC)

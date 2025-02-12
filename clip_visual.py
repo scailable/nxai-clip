@@ -14,13 +14,20 @@ model_means = [round(255 * m, 2) for m in model_means]  # Convert to 0-255 range
 model_stds = [0.26862954, 0.26130258, 0.27577711]
 model_stds = [round(255 * s, 2) for s in model_stds]  # Convert to 0-255 range
 model_name = "RN50"  # TODO: Replace with the desired clip model version
+
+text_classes = [
+     "boys fighting",
+     "boys playing"
+ ]
+
 text_classes = [
     "orange", "sliced-apple", "", "rotten-apple", "apple"
 ]
+
 class_names = ";".join([f'{i}:a photo of a {c}' for i, c in enumerate(text_classes)])
 scores_output_name = f'scores-{class_names}'
 opset_version = 14
-onnx_path = "clip_visual.onnx"
+onnx_path = "boys.onnx"
 
 
 class ClipTextualModel(nn.Module):
@@ -119,7 +126,7 @@ except Exception as e:
 # Load the ONNX model
 import onnxruntime
 
-ort_session = onnxruntime.InferenceSession("clip_visual.onnx")
+ort_session = onnxruntime.InferenceSession("boys.onnx")
 
 # Run the model
 ort_inputs = {ort_session.get_inputs()[0].name: image.detach().numpy()}

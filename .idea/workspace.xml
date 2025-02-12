@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ff92e6d-f279-43e8-877b-59b6e2f81fee" name="Changes" comment="Update multimodal model">
-      <change afterPath="$PROJECT_DIR$/clip_visual_only.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pveg-nxai-clip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pveg-nxai-clip.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clip_multimodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/clip_multimodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clip_visual.onnx" beforeDir="false" afterPath="$PROJECT_DIR$/clip_visual.onnx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boys.onnx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clip_visual.onnx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/clip_visual.py" beforeDir="false" afterPath="$PROJECT_DIR$/clip_visual.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/two-cars.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/two-cars.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/person.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clip_visual_only.py" beforeDir="false" afterPath="$PROJECT_DIR$/clip_visual_only.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,14 +80,14 @@
       <window_info anchor="bottom" id="HfCacheToolWindow" />
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="Find" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.22094297" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.12554824" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.18804824" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.4939693" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="Python Packages" order="5" weight="0.4939693" />
       <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.4939693" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.36348683" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="SciView" />
@@ -132,7 +123,7 @@
       <workItem from="1738757635275" duration="17933000" />
       <workItem from="1738939700994" duration="3842000" />
       <workItem from="1739174173667" duration="872000" />
-      <workItem from="1739180378431" duration="32424000" />
+      <workItem from="1739180378431" duration="39588000" />
     </task>
     <task id="LOCAL-00001" summary="Add multimodal model">
       <option name="closed" value="true" />
@@ -182,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739275237345</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update multimodal model">
+      <option name="closed" value="true" />
+      <created>1739356293071</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739356293071</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update multimodal model">
+      <option name="closed" value="true" />
+      <created>1739356417394</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739356417394</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +219,6 @@
     <SUITE FILE_PATH="coverage/pveg_nxai_clip$clip_multimodel.coverage" NAME="clip_multimodel Coverage Results" MODIFIED="1739356243322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pveg_nxai_clip$clip_visual_only.coverage" NAME="clip_visual_only Coverage Results" MODIFIED="1739290393063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pveg_nxai_clip$clip_one_step_onnx.coverage" NAME="clip_one_step_onnx Coverage Results" MODIFIED="1738760736288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pveg_nxai_clip$clip_visual.coverage" NAME="clip_visual Coverage Results" MODIFIED="1739356136564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pveg_nxai_clip$clip_visual.coverage" NAME="clip_visual Coverage Results" MODIFIED="1739363696258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
