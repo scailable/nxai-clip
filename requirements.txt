@@ -1,8 +1,9 @@
-clip~=1.0
-onnx~=1.17.0
+git+https://github.com/openai/CLIP.git
+onnx~=1.15.0
 torch~=2.6.0
 sclblonnx~=0.3.0
 onnxruntime~=1.20.1
 pillow~=11.1.0
 onnxsim~=0.4.36
 numpy~=2.2.2
+instant_clip_tokenizer

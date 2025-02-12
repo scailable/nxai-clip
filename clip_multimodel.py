@@ -54,7 +54,7 @@ def run_pytorch_inference():
     device, model_name = "cpu", "RN50"
     clip_model, preprocess_fn = clip.load(model_name, device=device, jit=False)
     model = CLIPMultiModalModel(clip_model).to(device).eval()
-    image_tensor = preprocess_fn(Image.open("person.jpg")).unsqueeze(0).to(device)
+    image_tensor = preprocess_fn(Image.open("images/orange.png")).unsqueeze(0).to(device)
     tokenizer = instant_clip_tokenizer.Tokenizer()
     text_tokens = torch.tensor(
         tokenizer.tokenize_batch(TEXT_CLASSES, context_length=77),

@@ -1,5 +1,4 @@
 import json
-
 import clip  # pip install git+https://github.com/openai/CLIP.git --user
 import onnx
 import torch
@@ -15,11 +14,9 @@ model_means = [round(255 * m, 2) for m in model_means]  # Convert to 0-255 range
 model_stds = [0.26862954, 0.26130258, 0.27577711]
 model_stds = [round(255 * s, 2) for s in model_stds]  # Convert to 0-255 range
 model_name = "RN50"  # TODO: Replace with the desired clip model version
-text_classes = ["the red car is on the top the blue car is on the bottom",
-                "the red car is on the left the blue car is on the right",
-                "the blue car is on the left the red car is on the right", "person", "dog", "cat", "orange", "apple",
-                "apple with leaves", "rotten apple", "rotten orange", "sliced orange",
-                "sliced apple"]  # TODO: Replace with the desired class names
+text_classes = [
+    "orange", "sliced-apple", "", "rotten-apple", "apple"
+]
 class_names = ";".join([f'{i}:a photo of a {c}' for i, c in enumerate(text_classes)])
 scores_output_name = f'scores-{class_names}'
 opset_version = 14
@@ -88,7 +85,7 @@ model, preprocess = clip.load(model_name, device="cpu", jit=False)
 clip_model = ClipVisionModel(model, text_classes)
 
 # batch first
-image = preprocess(Image.open("person.jpg")).unsqueeze(0).cpu()  # [1, 3, 224, 224]
+image = preprocess(Image.open("images/orange.png")).unsqueeze(0).cpu()  # [1, 3, 224, 224]
 
 # Run the model
 scores = clip_model(image)
