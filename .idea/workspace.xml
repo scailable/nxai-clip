@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ff92e6d-f279-43e8-877b-59b6e2f81fee" name="Changes" comment="Update multimodal model">
+      <change afterPath="$PROJECT_DIR$/clip_visual_only.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pveg-nxai-clip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pveg-nxai-clip.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clip_multimodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/clip_multimodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clip_visual.onnx" beforeDir="false" afterPath="$PROJECT_DIR$/clip_visual.onnx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clip_visual.py" beforeDir="false" afterPath="$PROJECT_DIR$/clip_visual.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/two-cars.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/two-cars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/person.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;robinvanemden&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/robinvanemden/pveg-nxai-clip.git&quot;,
+    &quot;accountId&quot;: &quot;bd6cacf4-7790-4e9f-9647-3b3d865b26b8&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2sZyZnjUrk0tGZHja2IkXOHGVaY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.clip_multimodel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.clip_multimodel_only_onnx.executor&quot;: &quot;Run&quot;,
+    &quot;Python.clip_one_step_onnx.executor&quot;: &quot;Run&quot;,
+    &quot;Python.clip_visual.executor&quot;: &quot;Run&quot;,
+    &quot;Python.clip_visual_only.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test-onnx.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/robin/projects/pveg-nxai-clip&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24772134" />
+      <window_info id="Commit" order="1" weight="0.24772134" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="HfCacheToolWindow" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Find" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.22094297" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.18804824" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.4939693" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Python Packages" order="5" weight="0.4939693" />
+      <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.4939693" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.32975262" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Plots" order="5" weight="0.1" />
+    </layout>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4027fba43365-JavaScript-PY-251.18673.39" />
+        <option value="bundled-python-sdk-54b45ae7caa8-b9098cbcb096-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.18673.39" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ff92e6d-f279-43e8-877b-59b6e2f81fee" name="Changes" comment="" />
+      <created>1738677450343</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738677450343</updated>
+      <workItem from="1738677451601" duration="16189000" />
+      <workItem from="1738757635275" duration="17933000" />
+      <workItem from="1738939700994" duration="3842000" />
+      <workItem from="1739174173667" duration="872000" />
+      <workItem from="1739180378431" duration="32424000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add multimodal model">
+      <option name="closed" value="true" />
+      <created>1739186623919</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739186623919</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add multimodal model">
+      <option name="closed" value="true" />
+      <created>1739186768945</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739186768945</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add multimodal model">
+      <option name="closed" value="true" />
+      <created>1739186823586</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739186823586</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update multimodal model.">
+      <option name="closed" value="true" />
+      <created>1739273463641</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739273463641</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update multimodal model">
+      <option name="closed" value="true" />
+      <created>1739274932171</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739274932171</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update multimodal model">
+      <option name="closed" value="true" />
+      <created>1739275237345</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739275237345</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Multimodal" />
+    <MESSAGE value="Add multimodal model" />
+    <MESSAGE value="Update multimodal model." />
+    <MESSAGE value="Update multimodal model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update multimodal model" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pveg_nxai_clip$clip_multimodel_only_onnx.coverage" NAME="clip_multimodel_only_onnx Coverage Results" MODIFIED="1739275216290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pveg_nxai_clip$test_onnx.coverage" NAME="test-onnx Coverage Results" MODIFIED="1738689544080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pveg_nxai_clip$clip_multimodel.coverage" NAME="clip_multimodel Coverage Results" MODIFIED="1739356243322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pveg_nxai_clip$clip_visual_only.coverage" NAME="clip_visual_only Coverage Results" MODIFIED="1739290393063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pveg_nxai_clip$clip_one_step_onnx.coverage" NAME="clip_one_step_onnx Coverage Results" MODIFIED="1738760736288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pveg_nxai_clip$clip_visual.coverage" NAME="clip_visual Coverage Results" MODIFIED="1739356136564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
